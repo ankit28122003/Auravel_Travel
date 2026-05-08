@@ -1,0 +1,23 @@
+
+> auravel-holidays@1.0.0 dev
+> vite --host 0.0.0.0 --port 5173
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m468[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.244.76.64:[1m5173[22m/[39m
+[2m11:38:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:40:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:40:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:40:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:40:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:40:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m11:41:00 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m11:41:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/DestinationPage.jsx, /src/index.css[22m
+[2m11:42:05 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:42:05 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
+[2m11:42:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Terms.jsx, /src/index.css[22m
+[2m11:42:49 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Terms.jsx, /src/index.css[22m
+[2m11:43:07 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Terms.jsx, /src/index.css[22m
+[2m11:57:54 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/index.css, /src/pages/Packages.jsx, /src/pages/DestinationPage.jsx, /src/pages/GalleryPage.jsx, /src/pages/Contact.jsx, /src/components/Footer.jsx, /src/components/EnquiryForm.jsx[22m
