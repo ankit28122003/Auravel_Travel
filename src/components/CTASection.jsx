@@ -9,10 +9,10 @@ export default function CTASection({
   secondaryLabel = 'View packages',
 }) {
   return (
-    <section className="bg-amber-300 px-5 py-16 text-slate-950">
+    <section className="bg-amber-100 px-5 py-16 text-slate-950">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div className="max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.28em] text-slate-700">Auravel Holidays</p>
+          <p className="text-sm font-black uppercase tracking-[0.28em] text-amber-700">Travel planning</p>
           <h2 className="mt-3 text-4xl font-black leading-tight sm:text-5xl">{title}</h2>
           <p className="mt-4 text-lg leading-8 text-slate-800">{text}</p>
         </div>

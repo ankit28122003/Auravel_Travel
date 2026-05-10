@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-950">
       <Navbar />
       <section className="relative overflow-hidden px-5 pb-16 pt-36">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_10%,rgba(251,191,36,.18),transparent_30%)]" />
@@ -12,7 +12,7 @@ export default function About() {
           <div>
             <p className="eyebrow">About Auravel Holidays</p>
             <h1 className="mt-4 text-5xl font-black leading-tight sm:text-6xl">Premium holidays with practical planning behind the polish.</h1>
-            <p className="mt-6 leading-8 text-slate-300">
+            <p className="mt-6 leading-8 text-slate-600">
               Auravel Holidays helps travelers choose, customize, and book domestic and international packages with clear communication and dependable support.
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function About() {
         <div className="mx-auto max-w-4xl text-center">
           <p className="eyebrow">How we work</p>
           <h2 className="text-4xl font-black sm:text-5xl">Simple, transparent, and human.</h2>
-          <p className="mt-6 leading-8 text-slate-300">
+          <p className="mt-6 leading-8 text-slate-600">
             You share the rough plan. We recommend destinations, package options, hotel categories, transfer plans, sightseeing, and upgrades. Once the package is finalized, the team coordinates the booking details and travel support.
           </p>
         </div>

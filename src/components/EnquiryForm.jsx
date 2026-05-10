@@ -28,6 +28,7 @@ export default function EnquiryForm({
     destination: defaultDestination,
   })
   const [status, setStatus] = useState('idle')
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (event) => {
     const { name, value } = event.target
@@ -37,6 +38,7 @@ export default function EnquiryForm({
   const handleSubmit = async (event) => {
     event.preventDefault()
     setStatus('submitting')
+    setErrorMessage('')
 
     try {
       await sendEnquiryEmail({ ...formData, source })
@@ -44,16 +46,17 @@ export default function EnquiryForm({
       navigate('/thank-you')
     } catch (error) {
       console.error('EmailJS submission failed:', error)
+      setErrorMessage(error?.text || error?.message || 'EmailJS could not send this enquiry. Please check the console for details.')
       setStatus('error')
     }
   }
 
   return (
-    <div className="rounded-[2rem] border border-white/10 bg-white/[0.07] p-5 shadow-2xl shadow-black/20 backdrop-blur-xl sm:p-8">
+    <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-2xl shadow-slate-200/70 sm:p-8">
       <div className={compact ? 'mb-5' : 'mb-8 text-center'}>
-        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-300">Free consultation</p>
-        <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl">{title}</h2>
-        <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base">{subtitle}</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.28em] text-amber-600">Free consultation</p>
+        <h2 className="mt-2 text-3xl font-bold text-slate-950 sm:text-4xl">{title}</h2>
+        <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">{subtitle}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -153,16 +156,15 @@ export default function EnquiryForm({
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-amber-300 px-6 py-4 text-sm font-bold uppercase tracking-[0.2em] text-slate-950 shadow-lg shadow-amber-300/20 transition hover:-translate-y-0.5 hover:bg-amber-200 disabled:cursor-not-allowed disabled:opacity-60"
+          className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-6 py-4 text-sm font-bold uppercase tracking-[0.2em] text-slate-950 shadow-lg shadow-amber-300/30 transition hover:-translate-y-0.5 hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-60"
         >
           <FaPaperPlane />
           {status === 'submitting' ? 'Sending enquiry...' : 'Send enquiry'}
         </button>
 
         {status === 'error' && (
-          <p className="rounded-2xl border border-red-400/30 bg-red-500/10 p-3 text-sm text-red-100">
-            EmailJS is using placeholder credentials. Add your Service ID, Template ID, and Public Key in
-            src/services/emailService.js, then try again.
+          <p className="rounded-2xl border border-red-200 bg-red-50 p-3 text-sm text-red-700">
+            {errorMessage}
           </p>
         )}
       </form>

@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import AppRoutes from './routes/AppRoutes'
 import FloatingButtons from './components/FloatingButtons'
 import Loader from './components/Loader'
+import ScrollToTop from './components/ScrollToTop'
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(() => sessionStorage.getItem('auravelIntroSeen') !== 'true')
@@ -29,6 +30,7 @@ export default function App() {
         animate={{ opacity: showIntro ? 0 : 1, y: showIntro ? 18 : 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
+        <ScrollToTop />
         <AppRoutes />
       </motion.div>
       <FloatingButtons />

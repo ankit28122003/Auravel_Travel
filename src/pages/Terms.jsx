@@ -62,22 +62,22 @@ const sections = [
 
 export default function Terms() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-950">
       <Navbar />
       <main className="mx-auto max-w-5xl px-5 pb-16 pt-36">
         <p className="eyebrow">Auravel Holidays</p>
         <h1 className="mt-4 text-5xl font-black">Terms and Conditions</h1>
-        <p className="mt-5 max-w-3xl leading-8 text-slate-300">
+        <p className="mt-5 max-w-3xl leading-8 text-slate-600">
           Effective May 2025. This page summarizes the Auravel Holidays final terms document for website use. The final booking confirmation may include package-specific payment, cancellation, visa, hotel, airline, or vendor rules.
         </p>
 
         <div className="mt-10 space-y-5">
           {sections.map((section) => (
-            <section key={section.title} className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
+            <section key={section.title} className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/70">
               <h2 className="text-2xl font-black">{section.title}</h2>
               <div className="mt-5 space-y-3">
                 {section.points.map((point) => (
-                  <p key={point} className="leading-7 text-slate-300">
+                  <p key={point} className="leading-7 text-slate-600">
                     {point}
                   </p>
                 ))}
@@ -86,9 +86,9 @@ export default function Terms() {
           ))}
         </div>
 
-        <div className="mt-8 rounded-[1.75rem] border border-amber-300/20 bg-amber-300/10 p-6">
+        <div className="mt-8 rounded-[1.75rem] border border-amber-200 bg-amber-50 p-6">
           <h2 className="text-2xl font-black">Grievance Redressal</h2>
-          <p className="mt-4 leading-7 text-slate-300">
+          <p className="mt-4 leading-7 text-slate-600">
             For any grievance, write to hello@auravelholidays.com within 15 days of tour completion. Auravel Holidays will endeavour to respond within 48 business hours. Disputes are governed by the laws of India.
           </p>
         </div>

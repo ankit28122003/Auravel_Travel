@@ -9,7 +9,7 @@ export default function DestinationCard({ item, index = 0 }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55, delay: Math.min(index * 0.04, 0.24) }}
-      className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/10 backdrop-blur-xl"
+      className="group overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-xl shadow-slate-200/70"
     >
       <Link to={`/destination/${item.slug}`} className="block">
         <div className="relative aspect-[4/3] overflow-hidden">
@@ -29,16 +29,16 @@ export default function DestinationCard({ item, index = 0 }) {
       </Link>
 
       <div className="p-5">
-        <p className="min-h-12 text-sm leading-6 text-slate-300">{item.tagline}</p>
-        <div className="mt-5 flex items-center justify-between gap-4 border-t border-white/10 pt-5">
-          <span className="inline-flex items-center gap-2 text-sm text-slate-300">
-            <FaClock className="text-amber-200" /> {item.duration}
+        <p className="min-h-12 text-sm leading-6 text-slate-600">{item.tagline}</p>
+        <div className="mt-5 flex items-center justify-between gap-4 border-t border-slate-200 pt-5">
+          <span className="inline-flex items-center gap-2 text-sm text-slate-600">
+            <FaClock className="text-amber-600" /> {item.duration}
           </span>
-          <span className="text-right text-lg font-black text-amber-200">{item.price}</span>
+          <span className="text-right text-lg font-black text-amber-600">{item.price}</span>
         </div>
         <Link
           to={`/destination/${item.slug}`}
-          className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-full bg-amber-300 px-5 py-3 text-sm font-black uppercase tracking-[0.18em] text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-200"
+          className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-full bg-amber-400 px-5 py-3 text-sm font-black uppercase tracking-[0.18em] text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300"
         >
           Book Now <FaArrowRight />
         </Link>

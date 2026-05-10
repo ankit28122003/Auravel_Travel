@@ -13,7 +13,7 @@ export default function DestinationPage() {
 
   if (!destination) {
     return (
-      <div className="min-h-screen bg-slate-950 text-white">
+      <div className="min-h-screen bg-slate-50 text-slate-950">
         <Navbar />
         <section className="grid min-h-screen place-items-center px-5 text-center">
           <div>
@@ -31,13 +31,13 @@ export default function DestinationPage() {
   const priceLabel = destination.price === 'Custom quote' ? 'Custom quote' : `Starting from ${destination.price.replace('INR ', '')}`
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-950">
       <Navbar />
 
-      <section className="relative min-h-[82vh] overflow-hidden pt-28">
+      <section className="relative min-h-[82vh] overflow-hidden pt-28 text-white">
         <img src={destination.image} alt={destination.name} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,.92),rgba(2,6,23,.62),rgba(2,6,23,.25))]" />
-        <div className="relative mx-auto grid min-h-[calc(82vh-7rem)] max-w-7xl items-center gap-10 px-5 py-16 lg:grid-cols-[1fr_.72fr]">
+        <div className="relative mx-auto grid min-h-[calc(82vh-7rem)] max-w-7xl items-center gap-10 px-5 py-16">
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="eyebrow">{destination.region}</p>
             <h1 className="mt-4 text-5xl font-black leading-none sm:text-6xl lg:text-7xl">{destination.packageTitle || destination.name}</h1>
@@ -48,13 +48,6 @@ export default function DestinationPage() {
               <span className="pill"><FaHotel /> Hotels + transfers</span>
             </div>
           </motion.div>
-          <EnquiryForm
-            compact
-            title={`Enquire for ${destination.name}`}
-            subtitle="Get a customized quote with hotels, transfers, sightseeing, and travel add-ons."
-            defaultDestination={destination.name}
-            source={`${destination.name} destination page`}
-          />
         </div>
       </section>
 
@@ -62,15 +55,15 @@ export default function DestinationPage() {
         <div>
           <p className="eyebrow">Package highlights</p>
           <h2 className="text-4xl font-black sm:text-5xl">What makes this trip worth taking.</h2>
-          <p className="mt-5 leading-8 text-slate-300">{destination.tagline}</p>
+          <p className="mt-5 leading-8 text-slate-600">{destination.tagline}</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {destination.highlights.map((highlight) => (
-            <div key={highlight} className="flex items-start gap-4 rounded-3xl border border-white/10 bg-white/[0.06] p-5">
-              <span className="mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber-300 text-xs text-slate-950">
+            <div key={highlight} className="flex items-start gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/70">
+              <span className="mt-1 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-amber-400 text-xs text-slate-950">
                 <FaCheck />
               </span>
-              <p className="font-semibold text-slate-100">{highlight}</p>
+              <p className="font-semibold text-slate-700">{highlight}</p>
             </div>
           ))}
         </div>
@@ -113,12 +106,12 @@ export default function DestinationPage() {
       {(destination.inclusions || destination.exclusions) && (
         <section className="section-shell grid gap-6 lg:grid-cols-2">
           {destination.inclusions && (
-            <div className="rounded-[1.75rem] border border-emerald-300/20 bg-emerald-400/10 p-6">
+            <div className="rounded-[1.75rem] border border-emerald-200 bg-emerald-50 p-6">
               <p className="eyebrow">Inclusions</p>
               <div className="mt-5 space-y-3">
                 {destination.inclusions.map((item) => (
-                  <div key={item} className="flex items-start gap-3 text-slate-200">
-                    <FaCheck className="mt-1 shrink-0 text-emerald-300" />
+                  <div key={item} className="flex items-start gap-3 text-slate-700">
+                    <FaCheck className="mt-1 shrink-0 text-emerald-600" />
                     <p>{item}</p>
                   </div>
                 ))}
@@ -127,12 +120,12 @@ export default function DestinationPage() {
           )}
 
           {destination.exclusions && (
-            <div className="rounded-[1.75rem] border border-red-300/20 bg-red-400/10 p-6">
+            <div className="rounded-[1.75rem] border border-red-200 bg-red-50 p-6">
               <p className="eyebrow">Exclusions</p>
               <div className="mt-5 space-y-3">
                 {destination.exclusions.map((item) => (
-                  <div key={item} className="flex items-start gap-3 text-slate-200">
-                    <FaTimesCircle className="mt-1 shrink-0 text-red-300" />
+                  <div key={item} className="flex items-start gap-3 text-slate-700">
+                    <FaTimesCircle className="mt-1 shrink-0 text-red-500" />
                     <p>{item}</p>
                   </div>
                 ))}
@@ -160,6 +153,21 @@ export default function DestinationPage() {
         </div>
       </section>
 
+      {destination.terms && (
+        <section className="section-shell">
+          <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm shadow-slate-200/70">
+            <p className="eyebrow">Important notes</p>
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
+              {destination.terms.map((term) => (
+                <p key={term} className="rounded-2xl bg-slate-50 p-4 text-sm leading-6 text-slate-600">
+                  {term}
+                </p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="section-shell">
         <div className="grid gap-5 md:grid-cols-3">
           {destination.gallery.map((image, index) => (
@@ -176,20 +184,16 @@ export default function DestinationPage() {
         </div>
       </section>
 
-      {destination.terms && (
-        <section className="section-shell pt-0">
-          <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6">
-            <p className="eyebrow">Important notes</p>
-            <div className="mt-5 grid gap-3 md:grid-cols-2">
-              {destination.terms.map((term) => (
-                <p key={term} className="rounded-2xl bg-white/[0.06] p-4 text-sm leading-6 text-slate-300">
-                  {term}
-                </p>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      <section className="section-shell pt-0">
+        <div className="mx-auto max-w-4xl">
+          <EnquiryForm
+            title={`Enquire for ${destination.name}`}
+            subtitle="Get a customized quote with hotels, transfers, sightseeing, and travel add-ons."
+            defaultDestination={destination.name}
+            source={`${destination.name} destination page`}
+          />
+        </div>
+      </section>
 
       <CTASection
         title={`Want to customize ${destination.name}?`}

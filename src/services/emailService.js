@@ -1,10 +1,10 @@
 import emailjs from 'emailjs-com'
 
 export const EMAILJS_CONFIG = {
-  serviceId: 'YOUR_EMAILJS_SERVICE_ID',
-  templateId: 'YOUR_EMAILJS_TEMPLATE_ID',
-  publicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
-  recipientEmail: 'hello@auravelholidays.com',
+  serviceId: 'service_8d6qdvx',
+  templateId: 'template_xt5weui',
+  publicKey: 'xym6g-Y2ovDSMVgcv',
+  recipientEmail: 'infoauravelholidays@gmail.com',
 }
 
 export const sendEnquiryEmail = (formData) => {

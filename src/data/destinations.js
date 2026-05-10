@@ -1,6 +1,3 @@
-const imageFor = (id, params = 'auto=format&fit=crop&w=1400&q=80') =>
-  `https://images.unsplash.com/${id}?${params}`
-
 export const company = {
   name: 'Auravel Holidays',
   email: 'hello@auravelholidays.com',
@@ -33,11 +30,11 @@ export const destinations = [
     highlights: ['Ubud rice terraces', 'Uluwatu Temple', 'Nusa Penida', 'Water sports', 'Private villa stays'],
     duration: '6 Nights / 7 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1537996194471-e657df975ab4'),
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1518548419970-58e3b4079ab2'),
-      imageFor('photo-1555400038-63f5ba517a47'),
-      imageFor('photo-1604999333679-b86d54738315'),
+      'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=1400&q=80',
     ],
   },
   {
@@ -51,11 +48,11 @@ export const destinations = [
     highlights: ['Phi Phi Islands', 'Maya Bay', 'Big Buddha', 'Old Town Phuket', 'Krabi 4 Islands'],
     duration: '5 Nights / 6 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1508009603885-50cf7c579365'),
+    image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1528181304800-259b08848526'),
-      imageFor('photo-1552465011-b4e21bf6e79a'),
-      imageFor('photo-1504214208698-ea1916a2195a'),
+      'https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=1400&q=80',
     ],
     facts: ['Thailand coastal package', 'Phuket + Krabi routing', 'Beach resort stays', 'Private departure transfer'],
     inclusions: [
@@ -117,11 +114,11 @@ export const destinations = [
     highlights: ['Universal Studios', 'Gardens by the Bay', 'Sentosa', 'Genting Dream Cruise', 'Genting Highlands'],
     duration: '8 Nights / 9 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1525625293386-3f8f99389edd'),
+    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1508964942454-1a56651d54ac'),
-      imageFor('photo-1565967511849-76a60a516170'),
-      imageFor('photo-1542114740389-9b46fb1e5be4'),
+      'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1542114740389-9b46fb1e5be4?auto=format&fit=crop&w=1400&q=80',
     ],
     facts: ['For 2 people', '4-star premium properties', 'Singapore visa included', 'Flights included'],
     stays: [
@@ -162,11 +159,11 @@ export const destinations = [
     highlights: ['Petronas Towers', 'Batu Caves', 'Langkawi', 'Genting Highlands', 'Cameron Highlands'],
     duration: '6 Nights / 7 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1596422846543-75c6fc197f07'),
+    image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1504457047772-27faf1c00561'),
-      imageFor('photo-1534008897995-27a23e859048'),
-      imageFor('photo-1593693397690-362cb9666fc2'),
+      'https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1534008897995-27a23e859048?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1400&q=80',
     ],
   },
   {
@@ -179,11 +176,11 @@ export const destinations = [
     highlights: ['Ha Long Bay cruise', 'Hanoi Old Quarter', 'Ho Chi Minh City', 'Cu Chi Tunnels', 'Hoi An'],
     duration: '8 Nights / 9 Days',
       price: 'Custom quote',
-    image: imageFor('photo-1528127269322-539801943592'),
+    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1559592413-7cec4d0cae2b'),
-      imageFor('photo-1583417319070-4a69db38a482'),
-      imageFor('photo-1513415564515-763d91423bdd'),
+      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1513415564515-763d91423bdd?auto=format&fit=crop&w=1400&q=80',
     ],
   },
   {
@@ -196,11 +193,11 @@ export const destinations = [
     highlights: ['Burj Khalifa', 'Desert safari', 'Dhow cruise', 'Dubai Mall', 'Palm Jumeirah'],
     duration: '5 Nights / 6 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1512453979798-5ea266f8880c'),
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1526495124232-a04e1849168c'),
-      imageFor('photo-1582672060674-bc2bd808a8b5'),
-      imageFor('photo-1518684079-3c830dcef090'),
+      'https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=80',
     ],
   },
   {
@@ -214,11 +211,11 @@ export const destinations = [
     highlights: ['Cellular Jail', 'Radhanagar Beach', 'Elephant Beach', 'Neil Island', 'Natural Bridge'],
     duration: '5 Nights / 6 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1586500036706-41963de24d8b'),
+    image: 'https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1500375592092-40eb2168fd21'),
-      imageFor('photo-1544551763-46a013bb70d5'),
-      imageFor('photo-1507525428034-b723cf961d3e'),
+      'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80',
     ],
     facts: ['For 2 people', 'Breakfast included', 'AC cruise to Havelock and Neil Island', 'Point-to-point assistance'],
     stays: [
@@ -258,11 +255,11 @@ export const destinations = [
     highlights: ['North Goa sightseeing', 'Dinner cruise', 'Aguada Fort', 'South Goa churches', 'Private transfers'],
     duration: '3 Nights / 4 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1512343879784-a960bf40e7f2'),
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1560179406-1c6c60e0dc76'),
-      imageFor('photo-1506461883276-594a12b11cf3'),
-      imageFor('photo-1553603227-2358aabe821e'),
+      'https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1553603227-2358aabe821e?auto=format&fit=crop&w=1400&q=80',
     ],
     facts: ['For 3 people', 'Zone Connect by The Park Parra Goa or similar', 'Breakfast included', 'Flights included'],
     stays: ['Goa: 3 nights at Zone Connect by The Park Parra Goa or similar, connect room, CP plan'],
@@ -293,11 +290,11 @@ export const destinations = [
     highlights: ['Dal Lake shikara', 'Gulmarg gondola', 'Pahalgam valley', 'Sonamarg', 'Houseboat stay'],
     duration: '7 Nights / 8 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1626621341517-bbf3d9990a23'),
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1595815771614-ade9d652a65d'),
-      imageFor('photo-1609948543911-7f01ff385be5'),
-      imageFor('photo-1500530855697-b586d89ba3ee'),
+      'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1609948543911-7f01ff385be5?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80',
     ],
   },
   {
@@ -310,11 +307,11 @@ export const destinations = [
     highlights: ['Munnar tea estates', 'Alleppey houseboat', 'Periyar wildlife', 'Kovalam beach', 'Ayurveda'],
     duration: '6 Nights / 7 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1602216056096-3b40cc0c9944'),
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1593693397690-362cb9666fc2'),
-      imageFor('photo-1500530855697-b586d89ba3ee'),
-      imageFor('photo-1524492412937-b28074a5d7da'),
+      'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80',
     ],
   },
   {
@@ -328,11 +325,11 @@ export const destinations = [
     highlights: ['Yamunotri', 'Gangotri', 'Kedarnath', 'Badrinath', 'Haridwar'],
     duration: '9 Nights / 10 Days',
     price: 'Custom quote',
-    image: imageFor('photo-1626621341517-bbf3d9990a23'),
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1400&q=80',
     gallery: [
-      imageFor('photo-1464822759023-fed622ff2c3b'),
-      imageFor('photo-1500530855697-b586d89ba3ee'),
-      imageFor('photo-1482938289607-e9573fc25ebb'),
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=1400&q=80',
     ],
     facts: ['Private departure', 'Start and end: Haridwar', 'Sedan sightseeing vehicle', 'MAP meals except Kedarnath'],
     stays: [
@@ -389,3 +386,4 @@ export const defaultItinerary = [
   { day: 5, title: 'Free day or add-ons', description: 'Optional premium experiences, spa, adventure activities, or cafe hopping.' },
   { day: 6, title: 'Departure support', description: 'Checkout and transfer assistance for your onward journey.' },
 ]
+

@@ -5,7 +5,7 @@ import { destinations } from '../data/destinations'
 
 export default function Packages() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-slate-50 text-slate-950">
       <Navbar />
       <section className="px-5 pb-10 pt-36">
         <div className="mx-auto max-w-7xl">
@@ -13,7 +13,7 @@ export default function Packages() {
           <h1 className="mt-4 max-w-4xl text-5xl font-black leading-tight sm:text-6xl">
             All major Auravel destinations in one place.
           </h1>
-          <p className="mt-5 max-w-2xl leading-8 text-slate-300">
+          <p className="mt-5 max-w-2xl leading-8 text-slate-600">
             Click Book Now on any package to open its dedicated destination page with highlights, itinerary, images, and enquiry form.
           </p>
         </div>

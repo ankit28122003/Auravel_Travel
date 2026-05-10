@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../assets/auravel-logo.jpeg'
+
+const logoSrc = '/auravel-logo.jpeg'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -16,17 +17,13 @@ export default function Navbar() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-4">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-slate-950/70 px-4 py-3 text-white shadow-2xl shadow-black/20 backdrop-blur-2xl sm:px-6">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+      <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-slate-200/80 bg-white/90 px-4 py-2 text-slate-950 shadow-xl shadow-slate-200/60 backdrop-blur-2xl sm:px-6">
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <img
-            src={logo}
-            alt="Auravel Holidays logo"
-            className="h-12 w-16 rounded-2xl object-cover shadow-lg shadow-black/20 sm:w-20"
+            src={logoSrc}
+            alt="Travel company logo"
+            className="h-14 w-24 rounded-2xl bg-white object-contain p-1 shadow-sm shadow-slate-200 sm:h-16 sm:w-28"
           />
-          <span>
-            <span className="block text-base font-black uppercase tracking-[0.18em] sm:text-lg">Auravel</span>
-            <span className="block text-xs uppercase tracking-[0.32em] text-amber-200">Holidays</span>
-          </span>
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex">
@@ -36,7 +33,7 @@ export default function Navbar() {
               to={link.to}
               className={({ isActive }) =>
                 `text-sm font-semibold uppercase tracking-[0.18em] transition ${
-                  isActive ? 'text-amber-200' : 'text-slate-200 hover:text-amber-200'
+                  isActive ? 'text-amber-600' : 'text-slate-700 hover:text-amber-600'
                 }`
               }
             >
@@ -47,7 +44,7 @@ export default function Navbar() {
 
         <Link
           to="/contact"
-          className="hidden rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.18em] text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-200 lg:inline-flex"
+          className="hidden rounded-full bg-amber-400 px-5 py-3 text-sm font-bold uppercase tracking-[0.18em] text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300 lg:inline-flex"
         >
           Book Now
         </Link>
@@ -56,20 +53,20 @@ export default function Navbar() {
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen((current) => !current)}
-          className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/10 text-white lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-slate-50 text-slate-950 lg:hidden"
         >
           {open ? <FaTimes /> : <FaBars />}
         </button>
       </nav>
 
       {open && (
-        <div className="mx-auto mt-3 max-w-7xl rounded-3xl border border-white/10 bg-slate-950/95 p-4 shadow-2xl backdrop-blur-2xl lg:hidden">
+        <div className="mx-auto mt-3 max-w-7xl rounded-3xl border border-slate-200 bg-white/95 p-4 shadow-2xl shadow-slate-200/70 backdrop-blur-2xl lg:hidden">
           {links.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               onClick={() => setOpen(false)}
-              className="block rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-200 hover:bg-white/10 hover:text-amber-200"
+              className="block rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-700 hover:bg-amber-50 hover:text-amber-600"
             >
               {link.label}
             </NavLink>
@@ -77,7 +74,7 @@ export default function Navbar() {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-2 flex justify-center rounded-full bg-amber-300 px-5 py-3 text-sm font-bold uppercase tracking-[0.18em] text-slate-950"
+            className="mt-2 flex justify-center rounded-full bg-amber-400 px-5 py-3 text-sm font-bold uppercase tracking-[0.18em] text-slate-950"
           >
             Book Now
           </Link>

@@ -12,9 +12,11 @@ import Terms from '../pages/Terms'
 import ThankYou from '../pages/ThankYou'
 import NotFound from '../pages/NotFound'
 
+
 export default function AppRoutes(){
   return(
     <Routes>
+   
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/destination/:slug" element={<DestinationPage />} />
