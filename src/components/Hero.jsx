@@ -6,15 +6,15 @@ const heroSlides = [
     alt: 'Beach holiday shoreline',
   },
   {
-    src: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1800&q=80',
+    src: '/images/Cruise.jpeg',
     alt: 'Bali tropical resort',
   },
   {
-    src: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1800&q=80',
+    src: '/images/home1.jpeg',
     alt: 'Thailand island water',
   },
   {
-    src: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1800&q=80',
+    src: '/images/home2.jpeg',
     alt: 'Singapore city skyline',
   },
   {
@@ -29,7 +29,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % heroSlides.length)
-    }, 1000)
+    }, 2500)
 
     return () => window.clearInterval(timer)
   }, [])

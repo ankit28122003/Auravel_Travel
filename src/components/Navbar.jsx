@@ -22,7 +22,7 @@ export default function Navbar() {
           <img
             src={logoSrc}
             alt="Travel company logo"
-            className="h-14 w-24 rounded-2xl bg-white object-contain p-1 shadow-sm shadow-slate-200 sm:h-16 sm:w-28"
+            className="h-14 w-24 rounded-2xl bg-white object-fit  shadow-sm shadow-slate-200 sm:h-16 sm:w-28"
           />
         </Link>
 
