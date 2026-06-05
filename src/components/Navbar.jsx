@@ -17,12 +17,12 @@ export default function Navbar() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 pt-4">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-slate-200/80 bg-white/90 px-4 py-2 text-slate-950 shadow-xl shadow-slate-200/60 backdrop-blur-2xl sm:px-6">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-slate-200/80 bg-white px-4 py-2 text-slate-950 shadow-xl shadow-slate-200/60 backdrop-blur-2xl sm:px-6">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <img
             src={logoSrc}
             alt="Travel company logo"
-            className="h-14 w-24 rounded-2xl bg-white object-fit  shadow-sm shadow-slate-200 sm:h-16 sm:w-28"
+            className="h-14 w-24  object-fit   sm:h-16 sm:w-28"
           />
         </Link>
 
