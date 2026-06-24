@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const heroSlides = [
   {
-    src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80',
+    src: '/images/cruise2.jpeg',
     alt: 'Beach holiday shoreline',
   },
   {
